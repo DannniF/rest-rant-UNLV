@@ -19,7 +19,7 @@ router.get('/', function(req,res){
 })
 
 router.post('/',function(req, res){
-  console.log('rest')
+  console.log(req.body)
   res.send('POST/places')
 })
 
