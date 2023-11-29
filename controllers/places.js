@@ -18,6 +18,11 @@ router.get('/', function(req,res){
     res.render('places/index', {places})
 })
 
+router.post('/',function(req, res){
+  console.log('rest')
+  res.send('POST/places')
+})
+
   router.get('/new', function(req, res){
     res.render('places/new')
   })
